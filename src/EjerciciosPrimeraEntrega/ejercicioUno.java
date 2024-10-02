@@ -8,7 +8,7 @@ public class ejercicioUno {
 
         System.out.println("Entero: " + entero);
         System.out.println("Decimal: " + decimal);
-        System.out.println("Cadena: " + cadena);
+        System.out.println("Cadena: " + cadena);d
   }
 }
 
