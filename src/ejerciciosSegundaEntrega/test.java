@@ -1,19 +1,29 @@
 package ejerciciosSegundaEntrega;
 
+import java.util.Scanner;
+
 public class test {
-	public class ejercicioSiete {
-		public static void main(String[]args) {
+	public static void  main(String[]args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Escriba un numero para saber si es par o impar : ");
+		int num =scan.nextInt();
+		
+		if (esPar(num)) {
+			System.out.println("El numero es par");
 			
-			int varNum =  5;
-			int varNum1 = 12 ; 
-			int varNum2 = 14 ; 
-			
-			double promedio = (varNum + varNum1 + varNum2) / 3.0 ;
-			
-			System.out.println("El promedio es: " + promedio);
-	    }
-			
-			
+		} else {
+			System.out.println("El numero es impar");
+
 		}
+		
+	
 
 }
+
+	private static boolean esPar(int num) {
+		return num % 2 == 0 ;
+	}
+}
+
